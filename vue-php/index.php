@@ -35,11 +35,11 @@
         <th>Edit</th>
         <th>Delete</th>
        </tr>
-       <tr v-for="row in allData">
-        <td>{{ row.first_name }}</td>
-        <td>{{ row.last_name }}</td>
-        <td><button type="button" name="edit" class="btn btn-primary btn-xs edit" @click="getItem(row.id)">Edit</button></td>
-        <td><button type="button" name="delete" class="btn btn-danger btn-xs delete" @click="deleteItem(row.id)">Delete</button></td>
+       <tr v-for="item in items">
+        <td>{{ item.first_name }}</td>
+        <td>{{ item.last_name }}</td>
+        <td><button type="button" name="edit" class="btn btn-primary btn-xs edit" @click="getItem(item.id)">Edit</button></td>
+        <td><button type="button" name="delete" class="btn btn-danger btn-xs delete" @click="deleteItem(item.id)">Delete</button></td>
        </tr>
       </table>
      </div>
