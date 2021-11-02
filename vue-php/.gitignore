@@ -1,0 +1,7 @@
+//git command: 
+ - git init
+ - git remote add gitRepo https://github.com/fk-pixel/Crud-Apps.git
+ - git add .
+ - git commit -m "" 
+ - git push gitRepo master
+ 
